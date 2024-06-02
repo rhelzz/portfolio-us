@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Navbar from './component/Navbar';
+import Section1 from './component/section-1';
+import Section2 from './component/section-2';
+import Slicer1 from './component/slicer-1';
+import Slicer2 from './component/slicer-2';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+
+    return (
+        <div className="bg-[#324932] font-poppins">
+            {/* Navbar */}
+            <Navbar />
+
+            {/* First Section */}
+            <Section1 />
+
+            {/* First Slicer */}
+            <Slicer1 />
+
+            {/* Second Section */}
+            <Section2 />
+
+            {/* Second Slicer */}
+            <Slicer2 />
+
+        </div>
+    );
 }
 
 export default App;
